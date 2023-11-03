@@ -1,0 +1,490 @@
+body,html{
+    width: 100%;
+    height: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+/* MobileSize */
+.text-muted {
+    --bs-text-opacity: 1;
+    color: #6c757d !important;
+}
+header{
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center;
+}
+nav{
+    /* position: fixed !important;
+    top: 0; */
+    width: 100% !important;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+    padding: 0.5rem 3.5rem !important;
+}
+a.navbar-start-p:hover{
+    color: blue !important;
+}
+.navbar-toggler{
+    padding: 0.4rem 0.7rem 0.6rem !important; 
+}
+.navbar-P,.navbar-toggler-icon{
+    font-size: 0.8rem !important;
+    font-weight: 500;
+}
+.navbar-start-p{
+    font-weight: 700;
+    font-family: "Kanit", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.header-container{
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.p-black{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.5);
+}
+.header-badg-container{
+    width: 100% !important;
+    max-width: 20rem;
+    height: fit-content !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.img-app-badg{
+    width: 11rem;
+    height: 4rem;
+    margin-top: 1rem;
+}
+
+.device-container{
+    width: 100% ;
+    max-width: 300px;
+    height: 20.8rem;
+    display: flex;
+    justify-content: center !important;
+    align-content: center !important;
+    position: relative !important;
+    margin-bottom: 4rem;
+}
+.device-element-container{
+    width: 10.5rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1 !important;
+}
+.device{
+    background-image: url(/portrait_black.png) !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1 !important;
+}
+video{
+    width: 100% !important;
+    height: 95% !important;
+    position: absolute;
+    top: 0.5rem;
+    left: 0;
+}
+.bg-gradient{
+    padding: 4rem 4rem;
+    color: white;
+    display: flex;
+    width: 100%;
+    background: linear-gradient(to bottom left, #8e2de2, #4a00e0) !important;
+    line-height: 2rem;
+}
+.display-none{
+    display: none;
+}
+.p-white{
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: "Newsreader", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.img-tnw{
+    width: 7rem;
+    height: 3.5rem;
+}
+.features{
+    width: 100%;
+    padding: 5rem;
+    gap: 3rem;
+}
+.features-container{
+    width: 10rem;
+}
+h3{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.h2-new-age{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.new-age{
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.age-paragraph{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.start-building{
+    padding: 14rem 3rem;
+}
+.h2-building{
+    font-size: 2.9rem;
+}
+.btn-secondary{
+    border: 1px solid white;
+    padding: 1rem 1.5rem;
+    border-radius: 40px;
+}
+.btn-secondary:hover{
+    color: black;
+    background-color: white;
+}
+.download-section{
+    background: linear-gradient(to bottom left, #8e2de2, #4a00e0) !important;
+    padding: 4rem 2rem;
+}
+.download-section-badg{
+    width: 100%;
+}
+.h2-download{
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+}
+.a-footer{
+    text-decoration: none;
+}
+.p-footer{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+@media only screen and (min-width:650px) {
+    /* tabletSize */
+    nav{
+        padding: 1rem 4rem !important;
+    }
+    .header-container{
+        padding: 4rem 4rem;
+    }
+    h1{
+        font-size: 4rem;
+    }
+    .device-container{
+        width: 100% ;
+        max-width: 400px;
+        height: 31rem;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        position: relative !important;
+        margin-bottom: 4rem;
+    }
+    .device-element-container{
+        width: 15.5rem;
+        height: 31rem !important;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        z-index: 1 !important;
+    }
+    .device{
+        background-image: url(/portrait_black.png) !important;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        box-sizing: content-box !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1 !important;
+    }
+    video{
+        width: 100% !important;
+        height: 95% !important;
+        position: absolute;
+        top: 0.7rem;
+        left: 0;
+    }
+    .background-circle{
+        width: 24.8rem !important;
+        height: 24.8rem;
+        border-radius: 51%;
+        display: block;
+    }
+    .bg-icon-device{
+        background: #4a00e0;
+    }
+    .little-circle{
+        display: block;
+        width: 12px !important;
+        height: 12px !important;
+        border-radius: 50%;
+        position: absolute;
+        top: 4rem;
+        right: -3rem;
+    }
+    .icon1{
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 900;
+        position: absolute;
+        bottom: 4rem;
+        left: -3rem;
+        color: #4a00e0;
+        transform: rotate(-14deg);
+    }
+    .p-white{
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    h3{
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    .features-container{
+        width: 15rem;
+    }
+    .h2-new-age{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2.8rem;
+        font-weight: 600;
+        text-align: center !important;
+    }
+    .new-age{
+        padding: 12rem 4rem;
+        text-align: start !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 1rem;
+    }
+    .h2-building{
+        font-size: 3.8rem;
+        margin-bottom: 1.5rem;
+    }
+    .download-section-badg{
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width:800px) {
+    /* tabletSize */
+    nav{
+        padding: 1rem 10rem !important;
+    }
+    ul{
+        display: flex;
+        justify-content: end;
+        gap: 1.5rem;
+    }
+    li{
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+    .feedback-nav-background{
+        padding: 0.5rem 1rem !important;
+        background-color: #4a00e0 !important;
+        border-radius: 20px;
+        color: white;
+    }
+    .header-container{
+        max-width: 50% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: start;
+    }
+    header{
+        flex-direction: row !important;
+        height: 100%;
+        padding: 2rem 5rem;
+        justify-content: space-between;
+        
+    }
+    .device-container{
+        width: 50% !important;
+        min-width: 50%;
+        height: 36rem;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        position: relative !important;
+        margin-bottom: 4rem;
+    }
+    .device-element-container{
+        width: 18rem;
+        height: 36rem !important;
+        position: absolute;
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+        top: 0;
+        z-index: 1 !important;
+    }
+    .device{
+        background-image: url(/portrait_black.png) !important;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100% !important;
+        height: 100% !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1 !important;
+    }
+    video{
+        width: 100% !important;
+        height: 95% !important;
+        position: absolute;
+        top: 1rem;
+    }
+    .background-circle{
+        width: 28.8rem !important;
+        height: 28.8rem;
+        border-radius: 51%;
+        display: block;
+    }
+    .bg-icon-device{
+        background: #4a00e0;
+    }
+    .little-circle{
+        display: block;
+        width: 12px !important;
+        height: 12px !important;
+        border-radius: 50%;
+        position: absolute;
+        top: 4rem;
+        right: 10rem;
+    }
+    .icon1{
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 900;
+        position: absolute;
+        bottom: 4rem;
+        left: 10rem;
+        color: #4a00e0;
+        transform: rotate(-14deg);
+    }
+    h1{
+        font-size: 5rem;
+    }
+    .header-badg-container{
+        width: 100% !important;
+        min-width: 100%;
+        height: auto !important;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: start;
+        gap: 2rem;
+    }
+    .p-white{
+        font-size: 2.5rem;
+        padding: 2.5rem 22%;
+    }
+    .features{
+        width: 100% !important;
+        padding: 5rem;
+        flex-direction: row-reverse !important;
+        flex-wrap: nowrap !important;
+    }
+    .features-side{
+        width: 60% !important;
+        max-width: 60%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between !important;
+    }
+    .features-container{
+        width: 20rem;
+        gap: 5rem;
+        
+    }
+    h3{
+        font-size: 1.9rem;
+        font-weight: 700;
+    }
+    .device-container-responsive{
+        max-width: 40% !important;
+    }
+    .device-element-container-responsive{
+        right: 12rem;
+    }
+    .background-circle-desktop{
+        width: 22.8rem !important;
+        height: 22.8rem;
+        border-radius: 51%;
+        display: block;
+    }
+    .little-circle-desktop{
+        display: block;
+        width: 12px !important;
+        height: 12px !important;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 7rem;
+        left: 13rem;
+        
+    }
+    .fa-xmark-desktop{
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 900;
+        position: absolute;
+        color: #4a00e0;
+        transform: rotate(-14deg);
+        top: 2rem !important;
+        right: 8rem !important;
+    }
+    .start-building{
+        padding: 20rem 9rem;
+    }
+    .h2-building{
+        font-size: 6rem;
+    }
+    .h2-download{
+        font-size: 2rem;
+    }
+    .download-section-badg{
+        flex-direction: row;
+        gap: 2rem;
+    }
+}
